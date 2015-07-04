@@ -1,0 +1,39 @@
+body {
+	font-family: 'Indie Flower';
+	font-size: 20px;
+}
+p.mid {
+	position: absolute;
+	max-width: 80%;
+	top: 80%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+img.center {
+	position: absolute;
+	max-width: 80%;
+	top: 10%;
+	left: 10%;
+}
+img.center:empty {
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+@media screen and (orientation: portrait) {
+  img.center { max-width: 90%; }
+}
+@media screen and (orientation: landscape) {
+  img.center { max-height: 90%; }
+}
+span.fb {
+	margin-left: 43%;
+}
